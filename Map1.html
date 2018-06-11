@@ -1,0 +1,2180 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_5b6122c1bf364c1495cf2e74b6d112bc {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_5b6122c1bf364c1495cf2e74b6d112bc" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_5b6122c1bf364c1495cf2e74b6d112bc = L.map(
+                                  'map_5b6122c1bf364c1495cf2e74b6d112bc',
+                                  {center: [49.58,-120.88],
+                                  zoom: 6,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_5695886e5b644fbeab32ccd2c8ffc706 = L.tileLayer(
+                'https://{s}.tiles.mapbox.com/v3/mapbox.world-bright/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_5b6122c1bf364c1495cf2e74b6d112bc);
+        
+    
+            var feature_group_beaa628299294091bac9b2b0487342c8 = L.featureGroup(
+                ).addTo(map_5b6122c1bf364c1495cf2e74b6d112bc);
+        
+    
+
+            var marker_71c8ed814e6b4e8bbb50ee4303246601 = L.marker(
+                [49.2614,-123.2459],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+
+                var icon_4548d382aa784c968758b6b2e40a04db = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_71c8ed814e6b4e8bbb50ee4303246601.setIcon(icon_4548d382aa784c968758b6b2e40a04db);
+            
+    
+            var popup_7f56b37a0c8843a59175fea253eb4f1e = L.popup({maxWidth: '300'});
+
+            
+                var html_f635ec89f5fd42999a167593c0602e11 = $('<div id="html_f635ec89f5fd42999a167593c0602e11" style="width: 100.0%; height: 100.0%;">I study Computer Science at UBC !</div>')[0];
+                popup_7f56b37a0c8843a59175fea253eb4f1e.setContent(html_f635ec89f5fd42999a167593c0602e11);
+            
+
+            marker_71c8ed814e6b4e8bbb50ee4303246601.bindPopup(popup_7f56b37a0c8843a59175fea253eb4f1e);
+
+            
+        
+    
+
+            var marker_b342c02f17d9490d8881fd5ab498c52b = L.marker(
+                [49.8815,-119.4625],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+
+                var icon_b6be80bb2b7541ccaf27fbc7d86a9a9a = L.AwesomeMarkers.icon({
+                    icon: 'flag',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b342c02f17d9490d8881fd5ab498c52b.setIcon(icon_b6be80bb2b7541ccaf27fbc7d86a9a9a);
+            
+    
+            var popup_df08b8ae89504187a82a9d756f1190d0 = L.popup({maxWidth: '300'});
+
+            
+                var html_62373aac00ca4d168d999bd7e3117ea2 = $('<div id="html_62373aac00ca4d168d999bd7e3117ea2" style="width: 100.0%; height: 100.0%;">My first Co-Op !</div>')[0];
+                popup_df08b8ae89504187a82a9d756f1190d0.setContent(html_62373aac00ca4d168d999bd7e3117ea2);
+            
+
+            marker_b342c02f17d9490d8881fd5ab498c52b.bindPopup(popup_df08b8ae89504187a82a9d756f1190d0);
+
+            
+        
+    
+            var circle_marker_a514111f433d447aa75e0f63e8396da9 = L.circleMarker(
+                [48.7767982,-121.810997],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_7f90e219b169431884bdd5ee29392096 = L.popup({maxWidth: '300'});
+
+            
+                var html_b36538d336c54baaa8981d94bf63726b = $('<div id="html_b36538d336c54baaa8981d94bf63726b" style="width: 100.0%; height: 100.0%;">The elevation is 3285.0 m.</div>')[0];
+                popup_7f90e219b169431884bdd5ee29392096.setContent(html_b36538d336c54baaa8981d94bf63726b);
+            
+
+            circle_marker_a514111f433d447aa75e0f63e8396da9.bindPopup(popup_7f90e219b169431884bdd5ee29392096);
+
+            
+        
+    
+            var circle_marker_bdb645dd04d243448f1e34b8f465552e = L.circleMarker(
+                [48.1118011,-121.1110001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_72116bf695664e378e829b73885937f2 = L.popup({maxWidth: '300'});
+
+            
+                var html_80b02d7551ed4d2ca290563e90b6f3a3 = $('<div id="html_80b02d7551ed4d2ca290563e90b6f3a3" style="width: 100.0%; height: 100.0%;">The elevation is 3213.0 m.</div>')[0];
+                popup_72116bf695664e378e829b73885937f2.setContent(html_80b02d7551ed4d2ca290563e90b6f3a3);
+            
+
+            circle_marker_bdb645dd04d243448f1e34b8f465552e.bindPopup(popup_72116bf695664e378e829b73885937f2);
+
+            
+        
+    
+            var circle_marker_a3823df23ed34837bdf4c6960014e2fc = L.circleMarker(
+                [46.8698006,-121.7509995],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_56c3290c3c634e68b74f793d9c81aa15 = L.popup({maxWidth: '300'});
+
+            
+                var html_995da41574f14b06ba8b1e5074c0f2f5 = $('<div id="html_995da41574f14b06ba8b1e5074c0f2f5" style="width: 100.0%; height: 100.0%;">The elevation is 4392.0 m.</div>')[0];
+                popup_56c3290c3c634e68b74f793d9c81aa15.setContent(html_995da41574f14b06ba8b1e5074c0f2f5);
+            
+
+            circle_marker_a3823df23ed34837bdf4c6960014e2fc.bindPopup(popup_56c3290c3c634e68b74f793d9c81aa15);
+
+            
+        
+    
+            var circle_marker_f8d843e01c0a456bb2947f72ec1135f4 = L.circleMarker(
+                [46.1997986,-122.1809998],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_aa09d77b65b4452783b075c6a0ecfbf7 = L.popup({maxWidth: '300'});
+
+            
+                var html_05b7209f23aa468fb991d455a2aec78d = $('<div id="html_05b7209f23aa468fb991d455a2aec78d" style="width: 100.0%; height: 100.0%;">The elevation is 2549.0 m.</div>')[0];
+                popup_aa09d77b65b4452783b075c6a0ecfbf7.setContent(html_05b7209f23aa468fb991d455a2aec78d);
+            
+
+            circle_marker_f8d843e01c0a456bb2947f72ec1135f4.bindPopup(popup_aa09d77b65b4452783b075c6a0ecfbf7);
+
+            
+        
+    
+            var circle_marker_28c4ec9c9abd45649cacaee8f57a129a = L.circleMarker(
+                [46.20579910000001,-121.4909973],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_1b846deff6884695a23e76757f5888ee = L.popup({maxWidth: '300'});
+
+            
+                var html_e52b353f50b449b49785b72a6ca8770e = $('<div id="html_e52b353f50b449b49785b72a6ca8770e" style="width: 100.0%; height: 100.0%;">The elevation is 3742.0 m.</div>')[0];
+                popup_1b846deff6884695a23e76757f5888ee.setContent(html_e52b353f50b449b49785b72a6ca8770e);
+            
+
+            circle_marker_28c4ec9c9abd45649cacaee8f57a129a.bindPopup(popup_1b846deff6884695a23e76757f5888ee);
+
+            
+        
+    
+            var circle_marker_a5974bdd32754217afc213e5f60cfa61 = L.circleMarker(
+                [45.8797989,-122.0810013],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_a2dada311e0446e1ac971ece3ec9f2dd = L.popup({maxWidth: '300'});
+
+            
+                var html_03652336026143c78593108cf768b37a = $('<div id="html_03652336026143c78593108cf768b37a" style="width: 100.0%; height: 100.0%;">The elevation is 1329.0 m.</div>')[0];
+                popup_a2dada311e0446e1ac971ece3ec9f2dd.setContent(html_03652336026143c78593108cf768b37a);
+            
+
+            circle_marker_a5974bdd32754217afc213e5f60cfa61.bindPopup(popup_a2dada311e0446e1ac971ece3ec9f2dd);
+
+            
+        
+    
+            var circle_marker_9fe64b52e49848a5bea23284f2b0f9ad = L.circleMarker(
+                [45.929798100000006,-121.8209991],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_10303d19e5b0453fa0f3dd451f85e77c = L.popup({maxWidth: '300'});
+
+            
+                var html_bde3da5a4918493fa18327dfe2698f33 = $('<div id="html_bde3da5a4918493fa18327dfe2698f33" style="width: 100.0%; height: 100.0%;">The elevation is 1806.0 m.</div>')[0];
+                popup_10303d19e5b0453fa0f3dd451f85e77c.setContent(html_bde3da5a4918493fa18327dfe2698f33);
+            
+
+            circle_marker_9fe64b52e49848a5bea23284f2b0f9ad.bindPopup(popup_10303d19e5b0453fa0f3dd451f85e77c);
+
+            
+        
+    
+            var circle_marker_a48c2c6ecb004eb6a7037befd171f416 = L.circleMarker(
+                [45.3737984,-121.6910019],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_29e363fdb97140dfbc3f219fe8ea62ac = L.popup({maxWidth: '300'});
+
+            
+                var html_713c4c99b124425b9e136d363c51f6f0 = $('<div id="html_713c4c99b124425b9e136d363c51f6f0" style="width: 100.0%; height: 100.0%;">The elevation is 3426.0 m.</div>')[0];
+                popup_29e363fdb97140dfbc3f219fe8ea62ac.setContent(html_713c4c99b124425b9e136d363c51f6f0);
+            
+
+            circle_marker_a48c2c6ecb004eb6a7037befd171f416.bindPopup(popup_29e363fdb97140dfbc3f219fe8ea62ac);
+
+            
+        
+    
+            var circle_marker_91e78a190bfb4dc58e0db60566b925c4 = L.circleMarker(
+                [44.691799200000005,-121.8010025],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_cccf98fbbf9c46e8b9d8ec98b97c6ce5 = L.popup({maxWidth: '300'});
+
+            
+                var html_32527f37f81e433b8fdb81c332ecdaa9 = $('<div id="html_32527f37f81e433b8fdb81c332ecdaa9" style="width: 100.0%; height: 100.0%;">The elevation is 3199.0 m.</div>')[0];
+                popup_cccf98fbbf9c46e8b9d8ec98b97c6ce5.setContent(html_32527f37f81e433b8fdb81c332ecdaa9);
+            
+
+            circle_marker_91e78a190bfb4dc58e0db60566b925c4.bindPopup(popup_cccf98fbbf9c46e8b9d8ec98b97c6ce5);
+
+            
+        
+    
+            var circle_marker_22a2a7cdc17f483cb007f3abb097a406 = L.circleMarker(
+                [44.4197998,-121.7710037],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_9a920e47caa44da3b571d11f951cf626 = L.popup({maxWidth: '300'});
+
+            
+                var html_12ec2c9d0ead44b7a3c69f428c2216dd = $('<div id="html_12ec2c9d0ead44b7a3c69f428c2216dd" style="width: 100.0%; height: 100.0%;">The elevation is 1230.0 m.</div>')[0];
+                popup_9a920e47caa44da3b571d11f951cf626.setContent(html_12ec2c9d0ead44b7a3c69f428c2216dd);
+            
+
+            circle_marker_22a2a7cdc17f483cb007f3abb097a406.bindPopup(popup_9a920e47caa44da3b571d11f951cf626);
+
+            
+        
+    
+            var circle_marker_e1f55c48015f405bb0a842deee086914 = L.circleMarker(
+                [44.3797989,-121.9309998],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_d2de1dabdd7d46e0a9e3368cb26553b4 = L.popup({maxWidth: '300'});
+
+            
+                var html_c83b8b9011fd43e9b82ed3c9d57922ad = $('<div id="html_c83b8b9011fd43e9b82ed3c9d57922ad" style="width: 100.0%; height: 100.0%;">The elevation is 1664.0 m.</div>')[0];
+                popup_d2de1dabdd7d46e0a9e3368cb26553b4.setContent(html_c83b8b9011fd43e9b82ed3c9d57922ad);
+            
+
+            circle_marker_e1f55c48015f405bb0a842deee086914.bindPopup(popup_d2de1dabdd7d46e0a9e3368cb26553b4);
+
+            
+        
+    
+            var circle_marker_87a9a287fe67424f8b614d7b6f66e380 = L.circleMarker(
+                [44.331798600000006,-121.8310013],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_09f46fed29a0467fac8c9a47363a5ef4 = L.popup({maxWidth: '300'});
+
+            
+                var html_ade40f15b3d545008991b927f05c53f8 = $('<div id="html_ade40f15b3d545008991b927f05c53f8" style="width: 100.0%; height: 100.0%;">The elevation is 2376.0 m.</div>')[0];
+                popup_09f46fed29a0467fac8c9a47363a5ef4.setContent(html_ade40f15b3d545008991b927f05c53f8);
+            
+
+            circle_marker_87a9a287fe67424f8b614d7b6f66e380.bindPopup(popup_09f46fed29a0467fac8c9a47363a5ef4);
+
+            
+        
+    
+            var circle_marker_ce50f88940624bf38b0f1130f2447705 = L.circleMarker(
+                [44.2848015,-121.8410034],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_4374dfa734ba49e59571b06479ef08f5 = L.popup({maxWidth: '300'});
+
+            
+                var html_b14d1c2d2c474442bb896d758916ca30 = $('<div id="html_b14d1c2d2c474442bb896d758916ca30" style="width: 100.0%; height: 100.0%;">The elevation is 2095.0 m.</div>')[0];
+                popup_4374dfa734ba49e59571b06479ef08f5.setContent(html_b14d1c2d2c474442bb896d758916ca30);
+            
+
+            circle_marker_ce50f88940624bf38b0f1130f2447705.bindPopup(popup_4374dfa734ba49e59571b06479ef08f5);
+
+            
+        
+    
+            var circle_marker_5ab8068273d04c19b2302e8bc8c0a2d4 = L.circleMarker(
+                [44.1697998,-121.7710037],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_2eb35848390546d4a0e28bb52dd109b4 = L.popup({maxWidth: '300'});
+
+            
+                var html_f03331ccc854446c95cbc896861b4c1b = $('<div id="html_f03331ccc854446c95cbc896861b4c1b" style="width: 100.0%; height: 100.0%;">The elevation is 3074.0 m.</div>')[0];
+                popup_2eb35848390546d4a0e28bb52dd109b4.setContent(html_f03331ccc854446c95cbc896861b4c1b);
+            
+
+            circle_marker_5ab8068273d04c19b2302e8bc8c0a2d4.bindPopup(popup_2eb35848390546d4a0e28bb52dd109b4);
+
+            
+        
+    
+            var circle_marker_7e92a204f87848bcbfa64784b4215a53 = L.circleMarker(
+                [44.099800099999996,-121.7710037],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_cf0f5ffab0b74613b6e245251e008005 = L.popup({maxWidth: '300'});
+
+            
+                var html_2158238397694b75ac151aec1c10c990 = $('<div id="html_2158238397694b75ac151aec1c10c990" style="width: 100.0%; height: 100.0%;">The elevation is 3157.0 m.</div>')[0];
+                popup_cf0f5ffab0b74613b6e245251e008005.setContent(html_2158238397694b75ac151aec1c10c990);
+            
+
+            circle_marker_7e92a204f87848bcbfa64784b4215a53.bindPopup(popup_cf0f5ffab0b74613b6e245251e008005);
+
+            
+        
+    
+            var circle_marker_1b792e6248c84513b5b39e03da52cfdb = L.circleMarker(
+                [43.978801700000005,-121.6809998],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_f5628f559f354896a139d0b5a0aa9654 = L.popup({maxWidth: '300'});
+
+            
+                var html_c483b7e3ae614d21a97933737861660c = $('<div id="html_c483b7e3ae614d21a97933737861660c" style="width: 100.0%; height: 100.0%;">The elevation is 2763.0 m.</div>')[0];
+                popup_f5628f559f354896a139d0b5a0aa9654.setContent(html_c483b7e3ae614d21a97933737861660c);
+            
+
+            circle_marker_1b792e6248c84513b5b39e03da52cfdb.bindPopup(popup_f5628f559f354896a139d0b5a0aa9654);
+
+            
+        
+    
+            var circle_marker_5e62ee537e494b15bb717e90c01f927e = L.circleMarker(
+                [43.7218018,-121.2210007],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_d69a13e21d3043f2b1f86ccbf34d6da5 = L.popup({maxWidth: '300'});
+
+            
+                var html_9089a0f9b7114c89acb210b06cf7d0f8 = $('<div id="html_9089a0f9b7114c89acb210b06cf7d0f8" style="width: 100.0%; height: 100.0%;">The elevation is 2434.0 m.</div>')[0];
+                popup_d69a13e21d3043f2b1f86ccbf34d6da5.setContent(html_9089a0f9b7114c89acb210b06cf7d0f8);
+            
+
+            circle_marker_5e62ee537e494b15bb717e90c01f927e.bindPopup(popup_d69a13e21d3043f2b1f86ccbf34d6da5);
+
+            
+        
+    
+            var circle_marker_317b9b9468c8477c82822aeff9872c0e = L.circleMarker(
+                [43.569801299999995,-121.8209991],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_cbad31f3dd994619b838d774adc6549f = L.popup({maxWidth: '300'});
+
+            
+                var html_e6ab2fb86de44ec38f6d7aee44c97bd7 = $('<div id="html_e6ab2fb86de44ec38f6d7aee44c97bd7" style="width: 100.0%; height: 100.0%;">The elevation is 2163.0 m.</div>')[0];
+                popup_cbad31f3dd994619b838d774adc6549f.setContent(html_e6ab2fb86de44ec38f6d7aee44c97bd7);
+            
+
+            circle_marker_317b9b9468c8477c82822aeff9872c0e.bindPopup(popup_cbad31f3dd994619b838d774adc6549f);
+
+            
+        
+    
+            var circle_marker_e7f44e7dcd344e20bd51db327f9d7f5b = L.circleMarker(
+                [43.5119019,-120.8610001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_e36b2045a9c54fcfabac5dabe3dc4062 = L.popup({maxWidth: '300'});
+
+            
+                var html_045b230303ba4667adb7be2b2c3c0a2b = $('<div id="html_045b230303ba4667adb7be2b2c3c0a2b" style="width: 100.0%; height: 100.0%;">The elevation is 1698.0 m.</div>')[0];
+                popup_e36b2045a9c54fcfabac5dabe3dc4062.setContent(html_045b230303ba4667adb7be2b2c3c0a2b);
+            
+
+            circle_marker_e7f44e7dcd344e20bd51db327f9d7f5b.bindPopup(popup_e36b2045a9c54fcfabac5dabe3dc4062);
+
+            
+        
+    
+            var circle_marker_bcb5e73299db415ead94c9bf2e6aa596 = L.circleMarker(
+                [43.240798999999996,-122.10099790000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_b32b3245de2442b49bc6ba2cbba491dd = L.popup({maxWidth: '300'});
+
+            
+                var html_5d250dbf4fc54afe9dddd2c4dff6feeb = $('<div id="html_5d250dbf4fc54afe9dddd2c4dff6feeb" style="width: 100.0%; height: 100.0%;">The elevation is 1956.0 m.</div>')[0];
+                popup_b32b3245de2442b49bc6ba2cbba491dd.setContent(html_5d250dbf4fc54afe9dddd2c4dff6feeb);
+            
+
+            circle_marker_bcb5e73299db415ead94c9bf2e6aa596.bindPopup(popup_b32b3245de2442b49bc6ba2cbba491dd);
+
+            
+        
+    
+            var circle_marker_6948abf6e67b47829677a222866eaa86 = L.circleMarker(
+                [43.471900899999994,-120.7509995],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_462d8cd2113440cfacebd0ec256efa17 = L.popup({maxWidth: '300'});
+
+            
+                var html_e0c98ea4908c494db25d18d50ffa7c26 = $('<div id="html_e0c98ea4908c494db25d18d50ffa7c26" style="width: 100.0%; height: 100.0%;">The elevation is 1711.0 m.</div>')[0];
+                popup_462d8cd2113440cfacebd0ec256efa17.setContent(html_e0c98ea4908c494db25d18d50ffa7c26);
+            
+
+            circle_marker_6948abf6e67b47829677a222866eaa86.bindPopup(popup_462d8cd2113440cfacebd0ec256efa17);
+
+            
+        
+    
+            var circle_marker_e17e0304de1c4066acf5c684e2b8e142 = L.circleMarker(
+                [43.3609009,-120.6610031],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_cc6268693ee646d693cd1d554fba8c2b = L.popup({maxWidth: '300'});
+
+            
+                var html_4b2a4cb79c8e42eeb5d9e71462376fa6 = $('<div id="html_4b2a4cb79c8e42eeb5d9e71462376fa6" style="width: 100.0%; height: 100.0%;">The elevation is 1501.0 m.</div>')[0];
+                popup_cc6268693ee646d693cd1d554fba8c2b.setContent(html_4b2a4cb79c8e42eeb5d9e71462376fa6);
+            
+
+            circle_marker_e17e0304de1c4066acf5c684e2b8e142.bindPopup(popup_cc6268693ee646d693cd1d554fba8c2b);
+
+            
+        
+    
+            var circle_marker_28e53b4efbae46828487ffc2405284ef = L.circleMarker(
+                [42.9299011,-122.1210022],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_887ab9b9aaca484c95c9805891313873 = L.popup({maxWidth: '300'});
+
+            
+                var html_7aecb629a943496ebe5f3e67aeea13fe = $('<div id="html_7aecb629a943496ebe5f3e67aeea13fe" style="width: 100.0%; height: 100.0%;">The elevation is 2487.0 m.</div>')[0];
+                popup_887ab9b9aaca484c95c9805891313873.setContent(html_7aecb629a943496ebe5f3e67aeea13fe);
+            
+
+            circle_marker_28e53b4efbae46828487ffc2405284ef.bindPopup(popup_887ab9b9aaca484c95c9805891313873);
+
+            
+        
+    
+            var circle_marker_7e3fc6e90e7248e7a8fdf931f9682df2 = L.circleMarker(
+                [44.4299011,-110.6709976],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_b819a80e203446bd8be82d30f4e2543b = L.popup({maxWidth: '300'});
+
+            
+                var html_567f3312707149f889c52381f5330868 = $('<div id="html_567f3312707149f889c52381f5330868" style="width: 100.0%; height: 100.0%;">The elevation is 2805.0 m.</div>')[0];
+                popup_b819a80e203446bd8be82d30f4e2543b.setContent(html_567f3312707149f889c52381f5330868);
+            
+
+            circle_marker_7e3fc6e90e7248e7a8fdf931f9682df2.bindPopup(popup_b819a80e203446bd8be82d30f4e2543b);
+
+            
+        
+    
+            var circle_marker_c744f56a36a446ab80d06c764e5a0928 = L.circleMarker(
+                [43.0998993,-118.7509995],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_628a7c35334449859abd4116484e4e9c = L.popup({maxWidth: '300'});
+
+            
+                var html_63df567e72a74a649b2a7b1c91e7ef47 = $('<div id="html_63df567e72a74a649b2a7b1c91e7ef47" style="width: 100.0%; height: 100.0%;">The elevation is 1435.0 m.</div>')[0];
+                popup_628a7c35334449859abd4116484e4e9c.setContent(html_63df567e72a74a649b2a7b1c91e7ef47);
+            
+
+            circle_marker_c744f56a36a446ab80d06c764e5a0928.bindPopup(popup_628a7c35334449859abd4116484e4e9c);
+
+            
+        
+    
+            var circle_marker_74036e9c76e04d72b2ebb5192e65da65 = L.circleMarker(
+                [43.1498985,-117.4710007],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_f5756e9027a8456381767576d0cf790d = L.popup({maxWidth: '300'});
+
+            
+                var html_caecf490ad454347812b59d94ef2ffea = $('<div id="html_caecf490ad454347812b59d94ef2ffea" style="width: 100.0%; height: 100.0%;">The elevation is 1473.0 m.</div>')[0];
+                popup_f5756e9027a8456381767576d0cf790d.setContent(html_caecf490ad454347812b59d94ef2ffea);
+            
+
+            circle_marker_74036e9c76e04d72b2ebb5192e65da65.bindPopup(popup_f5756e9027a8456381767576d0cf790d);
+
+            
+        
+    
+            var circle_marker_695350a538574ffdae937277d417633b = L.circleMarker(
+                [42.9999008,-117.8010025],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_a3caf29fa82f4ea8bf375856d8fc5f22 = L.popup({maxWidth: '300'});
+
+            
+                var html_d427a931765545baa444553036098d03 = $('<div id="html_d427a931765545baa444553036098d03" style="width: 100.0%; height: 100.0%;">The elevation is 1700.0 m.</div>')[0];
+                popup_a3caf29fa82f4ea8bf375856d8fc5f22.setContent(html_d427a931765545baa444553036098d03);
+            
+
+            circle_marker_695350a538574ffdae937277d417633b.bindPopup(popup_a3caf29fa82f4ea8bf375856d8fc5f22);
+
+            
+        
+    
+            var circle_marker_5530f94cab9d4964b720f93c735990e0 = L.circleMarker(
+                [43.419899,-113.5009995],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_00b8bddf77354bc5afd8dad7250f0718 = L.popup({maxWidth: '300'});
+
+            
+                var html_781ab9632f8a49ebac0b7ff7568b37fb = $('<div id="html_781ab9632f8a49ebac0b7ff7568b37fb" style="width: 100.0%; height: 100.0%;">The elevation is 2005.0 m.</div>')[0];
+                popup_00b8bddf77354bc5afd8dad7250f0718.setContent(html_781ab9632f8a49ebac0b7ff7568b37fb);
+            
+
+            circle_marker_5530f94cab9d4964b720f93c735990e0.bindPopup(popup_00b8bddf77354bc5afd8dad7250f0718);
+
+            
+        
+    
+            var circle_marker_f011762fb08d45c59bbedd42e3832af3 = L.circleMarker(
+                [43.4999008,-112.45099640000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_958162a82b634da9800f49693751aecc = L.popup({maxWidth: '300'});
+
+            
+                var html_6c2862ccb7aa42d9b22f9ad61150c420 = $('<div id="html_6c2862ccb7aa42d9b22f9ad61150c420" style="width: 100.0%; height: 100.0%;">The elevation is 1631.0 m.</div>')[0];
+                popup_958162a82b634da9800f49693751aecc.setContent(html_6c2862ccb7aa42d9b22f9ad61150c420);
+            
+
+            circle_marker_f011762fb08d45c59bbedd42e3832af3.bindPopup(popup_958162a82b634da9800f49693751aecc);
+
+            
+        
+    
+            var circle_marker_716bbe570af243f1872a9a0ea20774c7 = L.circleMarker(
+                [43.1799011,-114.35099790000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_bf90bbab6d1441d5829e5e470360d52f = L.popup({maxWidth: '300'});
+
+            
+                var html_fca78b4dd0ae4ac98ee9545a6d70cee9 = $('<div id="html_fca78b4dd0ae4ac98ee9545a6d70cee9" style="width: 100.0%; height: 100.0%;">The elevation is 1478.0 m.</div>')[0];
+                popup_bf90bbab6d1441d5829e5e470360d52f.setContent(html_fca78b4dd0ae4ac98ee9545a6d70cee9);
+            
+
+            circle_marker_716bbe570af243f1872a9a0ea20774c7.bindPopup(popup_bf90bbab6d1441d5829e5e470360d52f);
+
+            
+        
+    
+            var circle_marker_c6c8b3c378bf441a90b9db3779eee39f = L.circleMarker(
+                [42.605899799999996,-117.5810013],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_1e03c4ca7f1b4b00862d3699ad6d3335 = L.popup({maxWidth: '300'});
+
+            
+                var html_be4e875687b044af862f69fbe7c79a2c = $('<div id="html_be4e875687b044af862f69fbe7c79a2c" style="width: 100.0%; height: 100.0%;">The elevation is 1418.0 m.</div>')[0];
+                popup_1e03c4ca7f1b4b00862d3699ad6d3335.setContent(html_be4e875687b044af862f69fbe7c79a2c);
+            
+
+            circle_marker_c6c8b3c378bf441a90b9db3779eee39f.bindPopup(popup_1e03c4ca7f1b4b00862d3699ad6d3335);
+
+            
+        
+    
+            var circle_marker_73e226a6f10d4f69b97b874383cfb168 = L.circleMarker(
+                [41.579898799999995,-121.5709991],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_cc1c13a9cb694b8d9e943859aa6aabe1 = L.popup({maxWidth: '300'});
+
+            
+                var html_cc564f2e54b64575ae4e9bd169a51fe3 = $('<div id="html_cc564f2e54b64575ae4e9bd169a51fe3" style="width: 100.0%; height: 100.0%;">The elevation is 2412.0 m.</div>')[0];
+                popup_cc1c13a9cb694b8d9e943859aa6aabe1.setContent(html_cc564f2e54b64575ae4e9bd169a51fe3);
+            
+
+            circle_marker_73e226a6f10d4f69b97b874383cfb168.bindPopup(popup_cc1c13a9cb694b8d9e943859aa6aabe1);
+
+            
+        
+    
+            var circle_marker_fd618db296a14bc3a85209fd9171bcdc = L.circleMarker(
+                [42.8799019,-113.2210007],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_af5142ea924d4cc58513408d6e0bda64 = L.popup({maxWidth: '300'});
+
+            
+                var html_8b18e5960108479ab30eefa6aaae8eed = $('<div id="html_8b18e5960108479ab30eefa6aaae8eed" style="width: 100.0%; height: 100.0%;">The elevation is 1604.0 m.</div>')[0];
+                popup_af5142ea924d4cc58513408d6e0bda64.setContent(html_8b18e5960108479ab30eefa6aaae8eed);
+            
+
+            circle_marker_fd618db296a14bc3a85209fd9171bcdc.bindPopup(popup_af5142ea924d4cc58513408d6e0bda64);
+
+            
+        
+    
+            var circle_marker_2f3b382c017e480eba48d4c92cf92823 = L.circleMarker(
+                [41.419899,-122.20099640000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_aee061ac9adf4c55acd2528784284157 = L.popup({maxWidth: '300'});
+
+            
+                var html_1a2f7435980942e09a3300d8e87b65a6 = $('<div id="html_1a2f7435980942e09a3300d8e87b65a6" style="width: 100.0%; height: 100.0%;">The elevation is 4317.0 m.</div>')[0];
+                popup_aee061ac9adf4c55acd2528784284157.setContent(html_1a2f7435980942e09a3300d8e87b65a6);
+            
+
+            circle_marker_2f3b382c017e480eba48d4c92cf92823.bindPopup(popup_aee061ac9adf4c55acd2528784284157);
+
+            
+        
+    
+            var circle_marker_a0b8acd0d9e8431d8637a7cb16004e4f = L.circleMarker(
+                [41.1778984,-121.4410019],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_fd70a2c00d484a58a95564f22f2e0a3e = L.popup({maxWidth: '300'});
+
+            
+                var html_9fd18c0565374814a9bfddfecc102766 = $('<div id="html_9fd18c0565374814a9bfddfecc102766" style="width: 100.0%; height: 100.0%;">The elevation is 1174.0 m.</div>')[0];
+                popup_fd70a2c00d484a58a95564f22f2e0a3e.setContent(html_9fd18c0565374814a9bfddfecc102766);
+            
+
+            circle_marker_a0b8acd0d9e8431d8637a7cb16004e4f.bindPopup(popup_fd70a2c00d484a58a95564f22f2e0a3e);
+
+            
+        
+    
+            var circle_marker_18a66fcd55974518b16858bf18899c77 = L.circleMarker(
+                [40.954898799999995,-121.3610001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_f929b77c30094a0fae22d13a0701ef46 = L.popup({maxWidth: '300'});
+
+            
+                var html_d8a1a89060f84a66923b8e232fadc99c = $('<div id="html_d8a1a89060f84a66923b8e232fadc99c" style="width: 100.0%; height: 100.0%;">The elevation is 1259.0 m.</div>')[0];
+                popup_f929b77c30094a0fae22d13a0701ef46.setContent(html_d8a1a89060f84a66923b8e232fadc99c);
+            
+
+            circle_marker_18a66fcd55974518b16858bf18899c77.bindPopup(popup_f929b77c30094a0fae22d13a0701ef46);
+
+            
+        
+    
+            var circle_marker_693aad2e9b3248d39acf3479c5e48be4 = L.circleMarker(
+                [40.77989960000001,-121.60099790000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_2f5c890d800b43509201ad710befd491 = L.popup({maxWidth: '300'});
+
+            
+                var html_a5ba235eb0a54d8b86e9ad5f48ce4444 = $('<div id="html_a5ba235eb0a54d8b86e9ad5f48ce4444" style="width: 100.0%; height: 100.0%;">The elevation is 1631.0 m.</div>')[0];
+                popup_2f5c890d800b43509201ad710befd491.setContent(html_a5ba235eb0a54d8b86e9ad5f48ce4444);
+            
+
+            circle_marker_693aad2e9b3248d39acf3479c5e48be4.bindPopup(popup_2f5c890d800b43509201ad710befd491);
+
+            
+        
+    
+            var circle_marker_48b666d3b91e4ce89220786fde6f91fd = L.circleMarker(
+                [40.6799011,-121.5510025],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_33f85010497f499a87de1d7668130462 = L.popup({maxWidth: '300'});
+
+            
+                var html_1cf10054e1034c37a61a964f37845d6a = $('<div id="html_1cf10054e1034c37a61a964f37845d6a" style="width: 100.0%; height: 100.0%;">The elevation is 2191.0 m.</div>')[0];
+                popup_33f85010497f499a87de1d7668130462.setContent(html_1cf10054e1034c37a61a964f37845d6a);
+            
+
+            circle_marker_48b666d3b91e4ce89220786fde6f91fd.bindPopup(popup_33f85010497f499a87de1d7668130462);
+
+            
+        
+    
+            var circle_marker_464b41d31d8f44da95739a248055eb44 = L.circleMarker(
+                [40.6299019,-120.8310013],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_39047457eed54ef6826a8b05004acce9 = L.popup({maxWidth: '300'});
+
+            
+                var html_b7356dc56a8842579deba4219cf5c47d = $('<div id="html_b7356dc56a8842579deba4219cf5c47d" style="width: 100.0%; height: 100.0%;">The elevation is 1652.0 m.</div>')[0];
+                popup_39047457eed54ef6826a8b05004acce9.setContent(html_b7356dc56a8842579deba4219cf5c47d);
+            
+
+            circle_marker_464b41d31d8f44da95739a248055eb44.bindPopup(popup_39047457eed54ef6826a8b05004acce9);
+
+            
+        
+    
+            var circle_marker_b200e1997fdc4b1aa0e05b19dcf220c3 = L.circleMarker(
+                [40.491901399999996,-121.5009995],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_bcef79d40cc541abb3a67004c1c7da50 = L.popup({maxWidth: '300'});
+
+            
+                var html_a5b5e6610ea0497ca3e65664949a64de = $('<div id="html_a5b5e6610ea0497ca3e65664949a64de" style="width: 100.0%; height: 100.0%;">The elevation is 3187.0 m.</div>')[0];
+                popup_bcef79d40cc541abb3a67004c1c7da50.setContent(html_a5b5e6610ea0497ca3e65664949a64de);
+            
+
+            circle_marker_b200e1997fdc4b1aa0e05b19dcf220c3.bindPopup(popup_bcef79d40cc541abb3a67004c1c7da50);
+
+            
+        
+    
+            var circle_marker_c3b91a3b130f42379f59695487b24c1c = L.circleMarker(
+                [38.9698982,-122.7710037],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_3ff83d3986634d659d19627c9016223f = L.popup({maxWidth: '300'});
+
+            
+                var html_32817657c75f4ff7a9d13ee988570dbc = $('<div id="html_32817657c75f4ff7a9d13ee988570dbc" style="width: 100.0%; height: 100.0%;">The elevation is 1439.0 m.</div>')[0];
+                popup_3ff83d3986634d659d19627c9016223f.setContent(html_32817657c75f4ff7a9d13ee988570dbc);
+            
+
+            circle_marker_c3b91a3b130f42379f59695487b24c1c.bindPopup(popup_3ff83d3986634d659d19627c9016223f);
+
+            
+        
+    
+            var circle_marker_d25f498534c74cc9a175621d40968814 = L.circleMarker(
+                [39.3749008,-119.7210007],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_b65dec95b9224657849b7a718fb1e548 = L.popup({maxWidth: '300'});
+
+            
+                var html_892b826186b140d3a5991a4e542c2bbb = $('<div id="html_892b826186b140d3a5991a4e542c2bbb" style="width: 100.0%; height: 100.0%;">The elevation is 1415.0 m.</div>')[0];
+                popup_b65dec95b9224657849b7a718fb1e548.setContent(html_892b826186b140d3a5991a4e542c2bbb);
+            
+
+            circle_marker_d25f498534c74cc9a175621d40968814.bindPopup(popup_b65dec95b9224657849b7a718fb1e548);
+
+            
+        
+    
+            var circle_marker_0883075324ef4f74b8f2baba385302e0 = L.circleMarker(
+                [39.6500015,-107.03099820000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_5b3899c759954c2aa5a3fde9eb4963f8 = L.popup({maxWidth: '300'});
+
+            
+                var html_8089cc9f12c9484ea92fb394e0344beb = $('<div id="html_8089cc9f12c9484ea92fb394e0344beb" style="width: 100.0%; height: 100.0%;">The elevation is 2230.0 m.</div>')[0];
+                popup_5b3899c759954c2aa5a3fde9eb4963f8.setContent(html_8089cc9f12c9484ea92fb394e0344beb);
+            
+
+            circle_marker_0883075324ef4f74b8f2baba385302e0.bindPopup(popup_5b3899c759954c2aa5a3fde9eb4963f8);
+
+            
+        
+    
+            var circle_marker_5fece30cdb5d4e92a5b92eb233b1af23 = L.circleMarker(
+                [37.9999008,-119.03099820000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_f23ccedd8dcb4f13a93bb933b2bd1a16 = L.popup({maxWidth: '300'});
+
+            
+                var html_37f27bb0f779428b9b4c8e9f864faf35 = $('<div id="html_37f27bb0f779428b9b4c8e9f864faf35" style="width: 100.0%; height: 100.0%;">The elevation is 2121.0 m.</div>')[0];
+                popup_f23ccedd8dcb4f13a93bb933b2bd1a16.setContent(html_37f27bb0f779428b9b4c8e9f864faf35);
+            
+
+            circle_marker_5fece30cdb5d4e92a5b92eb233b1af23.bindPopup(popup_f23ccedd8dcb4f13a93bb933b2bd1a16);
+
+            
+        
+    
+            var circle_marker_e64e39ce29c144a7b60b597218060a29 = L.circleMarker(
+                [38.970001200000006,-112.5009995],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_7cc1c1b04ddc45dbb9c15fd8f634f415 = L.popup({maxWidth: '300'});
+
+            
+                var html_db3f3eedc03a452d87df6ec78b7196a4 = $('<div id="html_db3f3eedc03a452d87df6ec78b7196a4" style="width: 100.0%; height: 100.0%;">The elevation is 1800.0 m.</div>')[0];
+                popup_7cc1c1b04ddc45dbb9c15fd8f634f415.setContent(html_db3f3eedc03a452d87df6ec78b7196a4);
+            
+
+            circle_marker_e64e39ce29c144a7b60b597218060a29.bindPopup(popup_7cc1c1b04ddc45dbb9c15fd8f634f415);
+
+            
+        
+    
+            var circle_marker_c2e4edbe3d5f44379aac3f29afa0ec2a = L.circleMarker(
+                [37.8799019,-119.0009995],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_06d9d62c0ced4408b5777083f88623f2 = L.popup({maxWidth: '300'});
+
+            
+                var html_8d8b93f899bf4078b3543a8ecb97d10b = $('<div id="html_8d8b93f899bf4078b3543a8ecb97d10b" style="width: 100.0%; height: 100.0%;">The elevation is 2796.0 m.</div>')[0];
+                popup_06d9d62c0ced4408b5777083f88623f2.setContent(html_8d8b93f899bf4078b3543a8ecb97d10b);
+            
+
+            circle_marker_c2e4edbe3d5f44379aac3f29afa0ec2a.bindPopup(popup_06d9d62c0ced4408b5777083f88623f2);
+
+            
+        
+    
+            var circle_marker_9ca0cbaef4a04c2a91913fbc4c953f13 = L.circleMarker(
+                [37.6918983,-119.0210037],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_7874ee513acb4626b8274c8cd2767f7f = L.popup({maxWidth: '300'});
+
+            
+                var html_807a97d6ace746e4bafc95f8c1eadaf7 = $('<div id="html_807a97d6ace746e4bafc95f8c1eadaf7" style="width: 100.0%; height: 100.0%;">The elevation is 2629.0 m.</div>')[0];
+                popup_7874ee513acb4626b8274c8cd2767f7f.setContent(html_807a97d6ace746e4bafc95f8c1eadaf7);
+            
+
+            circle_marker_9ca0cbaef4a04c2a91913fbc4c953f13.bindPopup(popup_7874ee513acb4626b8274c8cd2767f7f);
+
+            
+        
+    
+            var circle_marker_62118acdd961468199432912c3887c74 = L.circleMarker(
+                [37.6999016,-118.8710022],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_e888f6dafe43404aaab270d747d4aebe = L.popup({maxWidth: '300'});
+
+            
+                var html_4884b13fc88d4bfb90a94d84feddd938 = $('<div id="html_4884b13fc88d4bfb90a94d84feddd938" style="width: 100.0%; height: 100.0%;">The elevation is 3390.0 m.</div>')[0];
+                popup_e888f6dafe43404aaab270d747d4aebe.setContent(html_4884b13fc88d4bfb90a94d84feddd938);
+            
+
+            circle_marker_62118acdd961468199432912c3887c74.bindPopup(popup_e888f6dafe43404aaab270d747d4aebe);
+
+            
+        
+    
+            var circle_marker_873ce9146f644eb1b876aef1ca2fc790 = L.circleMarker(
+                [37.579898799999995,-119.0510025],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_92aa653fb13e48cdb7805710ea2d9de8 = L.popup({maxWidth: '300'});
+
+            
+                var html_3e596abd6f324a9c90e6042c320f6f53 = $('<div id="html_3e596abd6f324a9c90e6042c320f6f53" style="width: 100.0%; height: 100.0%;">The elevation is 2748.0 m.</div>')[0];
+                popup_92aa653fb13e48cdb7805710ea2d9de8.setContent(html_3e596abd6f324a9c90e6042c320f6f53);
+            
+
+            circle_marker_873ce9146f644eb1b876aef1ca2fc790.bindPopup(popup_92aa653fb13e48cdb7805710ea2d9de8);
+
+            
+        
+    
+            var circle_marker_23d158c396c84e0097ab4fc10d5a6813 = L.circleMarker(
+                [37.0199013,-117.45099640000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_f9aef7b3e3bc416cbed3541ddf1f80ca = L.popup({maxWidth: '300'});
+
+            
+                var html_cb032877f7ac424c963e53bb47002397 = $('<div id="html_cb032877f7ac424c963e53bb47002397" style="width: 100.0%; height: 100.0%;">The elevation is 752.0 m.</div>')[0];
+                popup_f9aef7b3e3bc416cbed3541ddf1f80ca.setContent(html_cb032877f7ac424c963e53bb47002397);
+            
+
+            circle_marker_23d158c396c84e0097ab4fc10d5a6813.bindPopup(popup_f9aef7b3e3bc416cbed3541ddf1f80ca);
+
+            
+        
+    
+            var circle_marker_f277d1cfd823484ab1a8b1af9c747fdd = L.circleMarker(
+                [37.5800018,-112.6709976],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_9678e8843c1f4d63836e8505949f512b = L.popup({maxWidth: '300'});
+
+            
+                var html_0be43d3cdaef460eb0129bf6772d2f45 = $('<div id="html_0be43d3cdaef460eb0129bf6772d2f45" style="width: 100.0%; height: 100.0%;">The elevation is 2840.0 m.</div>')[0];
+                popup_9678e8843c1f4d63836e8505949f512b.setContent(html_0be43d3cdaef460eb0129bf6772d2f45);
+            
+
+            circle_marker_f277d1cfd823484ab1a8b1af9c747fdd.bindPopup(popup_9678e8843c1f4d63836e8505949f512b);
+
+            
+        
+    
+            var circle_marker_c748f1ccd8e44df998cfd8d71f9816f5 = L.circleMarker(
+                [37.257,-113.6210022],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_ac326e406af140b1a6a7a14f6d73ac93 = L.popup({maxWidth: '300'});
+
+            
+                var html_c0f5bcae04fd40db9cb98eade290fe95 = $('<div id="html_c0f5bcae04fd40db9cb98eade290fe95" style="width: 100.0%; height: 100.0%;">The elevation is 1465.0 m.</div>')[0];
+                popup_ac326e406af140b1a6a7a14f6d73ac93.setContent(html_c0f5bcae04fd40db9cb98eade290fe95);
+            
+
+            circle_marker_c748f1ccd8e44df998cfd8d71f9816f5.bindPopup(popup_ac326e406af140b1a6a7a14f6d73ac93);
+
+            
+        
+    
+            var circle_marker_4d129a6e78a1489bbcf957978363fcdb = L.circleMarker(
+                [37.32799910000001,-112.40100100000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_8e6a6c9a446a46d59aae09dd9720e7a7 = L.popup({maxWidth: '300'});
+
+            
+                var html_2f1ed708bc5b426b83eb9662ed0bce23 = $('<div id="html_2f1ed708bc5b426b83eb9662ed0bce23" style="width: 100.0%; height: 100.0%;">The elevation is 2135.0 m.</div>')[0];
+                popup_8e6a6c9a446a46d59aae09dd9720e7a7.setContent(html_2f1ed708bc5b426b83eb9662ed0bce23);
+            
+
+            circle_marker_4d129a6e78a1489bbcf957978363fcdb.bindPopup(popup_8e6a6c9a446a46d59aae09dd9720e7a7);
+
+            
+        
+    
+            var circle_marker_1f9ffdcd7aa94467bc8ef044ce3fc1fd = L.circleMarker(
+                [36.3578987,-118.3209991],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_396562774fc44c86a66884bf24ed1bc8 = L.popup({maxWidth: '300'});
+
+            
+                var html_c7101839028c4af78288614e191b9dc1 = $('<div id="html_c7101839028c4af78288614e191b9dc1" style="width: 100.0%; height: 100.0%;">The elevation is 2886.0 m.</div>')[0];
+                popup_396562774fc44c86a66884bf24ed1bc8.setContent(html_c7101839028c4af78288614e191b9dc1);
+            
+
+            circle_marker_1f9ffdcd7aa94467bc8ef044ce3fc1fd.bindPopup(popup_396562774fc44c86a66884bf24ed1bc8);
+
+            
+        
+    
+            var circle_marker_2dcb23d1179b48a68121b3fdced482f7 = L.circleMarker(
+                [36.02989960000001,-117.8209991],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_7d146b83f56f4f78a657ad47115c0e32 = L.popup({maxWidth: '300'});
+
+            
+                var html_96dbbf82937943979bce8eed26eeef5f = $('<div id="html_96dbbf82937943979bce8eed26eeef5f" style="width: 100.0%; height: 100.0%;">The elevation is 2400.0 m.</div>')[0];
+                popup_7d146b83f56f4f78a657ad47115c0e32.setContent(html_96dbbf82937943979bce8eed26eeef5f);
+            
+
+            circle_marker_2dcb23d1179b48a68121b3fdced482f7.bindPopup(popup_7d146b83f56f4f78a657ad47115c0e32);
+
+            
+        
+    
+            var circle_marker_1b8d867f25c440b1896166e582da9ff1 = L.circleMarker(
+                [36.3800011,-113.1309967],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_e42c1be9ed1a476a95e5a232fdfed701 = L.popup({maxWidth: '300'});
+
+            
+                var html_61e3c50ca90a410295a10df7922abf86 = $('<div id="html_61e3c50ca90a410295a10df7922abf86" style="width: 100.0%; height: 100.0%;">The elevation is 1555.0 m.</div>')[0];
+                popup_e42c1be9ed1a476a95e5a232fdfed701.setContent(html_61e3c50ca90a410295a10df7922abf86);
+            
+
+            circle_marker_1b8d867f25c440b1896166e582da9ff1.bindPopup(popup_e42c1be9ed1a476a95e5a232fdfed701);
+
+            
+        
+    
+            var circle_marker_ca32e10655f84436a45436bdcc8cba31 = L.circleMarker(
+                [34.75,-116.6210022],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_f99a1b235c514dccb64f2384e163af85 = L.popup({maxWidth: '300'});
+
+            
+                var html_aefb1613d7084cb08416f32ee8d7e26a = $('<div id="html_aefb1613d7084cb08416f32ee8d7e26a" style="width: 100.0%; height: 100.0%;">The elevation is 1495.0 m.</div>')[0];
+                popup_f99a1b235c514dccb64f2384e163af85.setContent(html_aefb1613d7084cb08416f32ee8d7e26a);
+            
+
+            circle_marker_ca32e10655f84436a45436bdcc8cba31.bindPopup(popup_f99a1b235c514dccb64f2384e163af85);
+
+            
+        
+    
+            var circle_marker_87cecc9700b74d8b910e8b676cd66892 = L.circleMarker(
+                [35.8699989,-106.5709991],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_26f654113d094029bd35bf95d289c5e0 = L.popup({maxWidth: '300'});
+
+            
+                var html_227576d8f1664c2794fc10ec213a235c = $('<div id="html_227576d8f1664c2794fc10ec213a235c" style="width: 100.0%; height: 100.0%;">The elevation is 3430.0 m.</div>')[0];
+                popup_26f654113d094029bd35bf95d289c5e0.setContent(html_227576d8f1664c2794fc10ec213a235c);
+            
+
+            circle_marker_87cecc9700b74d8b910e8b676cd66892.bindPopup(popup_26f654113d094029bd35bf95d289c5e0);
+
+            
+        
+    
+            var circle_marker_5b75a5e5468245f69f11f62e14e6df68 = L.circleMarker(
+                [35.3699989,-111.5009995],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_dea3fde4f8b947f4afacf290e181ad00 = L.popup({maxWidth: '300'});
+
+            
+                var html_c7833c1541bd4563bc365ff4a2d8a7ea = $('<div id="html_c7833c1541bd4563bc365ff4a2d8a7ea" style="width: 100.0%; height: 100.0%;">The elevation is 2447.0 m.</div>')[0];
+                popup_dea3fde4f8b947f4afacf290e181ad00.setContent(html_c7833c1541bd4563bc365ff4a2d8a7ea);
+            
+
+            circle_marker_5b75a5e5468245f69f11f62e14e6df68.bindPopup(popup_dea3fde4f8b947f4afacf290e181ad00);
+
+            
+        
+    
+            var circle_marker_9528c294a43c4237b61f8d7f8455cb1a = L.circleMarker(
+                [34.5499992,-115.78099820000001],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_8347f50cdcfd41b1a662c3b8e783297c = L.popup({maxWidth: '300'});
+
+            
+                var html_ee42401c98f84baa95e5ab4732e4e567 = $('<div id="html_ee42401c98f84baa95e5ab4732e4e567" style="width: 100.0%; height: 100.0%;">The elevation is 288.0 m.</div>')[0];
+                popup_8347f50cdcfd41b1a662c3b8e783297c.setContent(html_ee42401c98f84baa95e5ab4732e4e567);
+            
+
+            circle_marker_9528c294a43c4237b61f8d7f8455cb1a.bindPopup(popup_8347f50cdcfd41b1a662c3b8e783297c);
+
+            
+        
+    
+            var circle_marker_89fbb57c58ea458aa05c12a01d15c8c7 = L.circleMarker(
+                [34.7999992,-108.0009995],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_f65a83fe9c5640b994060bc4b74ee156 = L.popup({maxWidth: '300'});
+
+            
+                var html_3e715d6a03924efb9132fe90326c92b6 = $('<div id="html_3e715d6a03924efb9132fe90326c92b6" style="width: 100.0%; height: 100.0%;">The elevation is 2550.0 m.</div>')[0];
+                popup_f65a83fe9c5640b994060bc4b74ee156.setContent(html_3e715d6a03924efb9132fe90326c92b6);
+            
+
+            circle_marker_89fbb57c58ea458aa05c12a01d15c8c7.bindPopup(popup_f65a83fe9c5640b994060bc4b74ee156);
+
+            
+        
+    
+            var circle_marker_6eacb7e5b4e24371991764cfbfdad982 = L.circleMarker(
+                [33.7801018,-105.9309998],
+                {
+  "bubblingMouseEvents": true,
+  "color": "grey",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "orange",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(feature_group_beaa628299294091bac9b2b0487342c8);
+            
+    
+            var popup_2a15b645f71c4fe2b683e7688489d19a = L.popup({maxWidth: '300'});
+
+            
+                var html_372f909bd73044cc865330d8b6f4462d = $('<div id="html_372f909bd73044cc865330d8b6f4462d" style="width: 100.0%; height: 100.0%;">The elevation is 1731.0 m.</div>')[0];
+                popup_2a15b645f71c4fe2b683e7688489d19a.setContent(html_372f909bd73044cc865330d8b6f4462d);
+            
+
+            circle_marker_6eacb7e5b4e24371991764cfbfdad982.bindPopup(popup_2a15b645f71c4fe2b683e7688489d19a);
+
+            
+        
+</script>
